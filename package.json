@@ -1,8 +1,15 @@
 {
-  "name": "typescript-slider",
+  "name": "2d-range-slider",
   "version": "0.1.0",
-  "private": true,
+  "main": "lib/Slider.tsx",
+  "module": "lib/Slider.tsx",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "private": false,
   "dependencies": {
+    "@react-hook/event": "^1.2.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -20,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "rm -rf lib && mkdir lib && babel ./src/slider -d lib --copy-files"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
