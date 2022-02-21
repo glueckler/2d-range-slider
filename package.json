@@ -8,6 +8,17 @@
     "README.md"
   ],
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glueckler/2d-range-slider"
+  },
+  "keywords": [
+    "react",
+    "slider",
+    "range",
+    "select"
+  ],
+  "author": "Dean Glueckler",
   "dependencies": {
     "@react-hook/event": "^1.2.3",
     "@testing-library/jest-dom": "^5.11.4",
