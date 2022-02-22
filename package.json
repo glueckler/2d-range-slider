@@ -19,7 +19,20 @@
     "select"
   ],
   "author": "Dean Glueckler",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-typescript",
+        {
+          "allExtensions": true,
+          "isTSX": true
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  },
   "dependencies": {
+    "2d-range-slider": "^0.1.0",
     "@react-hook/event": "^1.2.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -39,7 +52,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf lib && mkdir lib && babel ./src/slider -d lib --copy-files"
+    "publish:npm": "rm -rf lib && mkdir lib && babel ./src/slider -d lib --extensions .ts,.tsx --copy-files"
   },
   "eslintConfig": {
     "extends": [
@@ -60,6 +73,9 @@
     ]
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7"
   }
 }
