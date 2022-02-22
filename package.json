@@ -1,8 +1,8 @@
 {
   "name": "2d-range-slider",
-  "version": "0.1.1",
-  "main": "lib/Slider.tsx",
-  "module": "lib/Slider.tsx",
+  "version": "0.1.2",
+  "main": "lib/Slider.js",
+  "module": "lib/Slider.js",
   "files": [
     "lib",
     "README.md"
@@ -32,7 +32,6 @@
     ]
   },
   "dependencies": {
-    "2d-range-slider": "^0.1.0",
     "@react-hook/event": "^1.2.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
